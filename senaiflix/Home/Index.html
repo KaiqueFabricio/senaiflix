@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senaiflix - Filmes e Séries</title>
+    <title>SENAIFLIX - Filmes e Séries</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../assets/Styles/Global.css".css">
 </head>
-
 <body>
-    <header class=cabecalho>
+    <header class="cabecalho">
         <a href="index.html">SENAIFLIX</a>
-
         <nav>
-            <a href="#">Inicio</a>
+            <a href="#">Início</a>
             <a href="#titulo-filmes">Filmes</a>
             <a href="#titulo-series">Séries</a>
         </nav>
@@ -21,24 +19,24 @@
     <main>
         <section class="banner">
             <div class="div-banner">
-            <h2>Assista Agora!</h2>
-            <p>Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da familia.</p>
-        </div>
+                <h2>Assista agora!</h2>
+                <p>Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>
+            </div>
         </section>
         <div class="inputs">
             <div class="pesquisa">
-                <label for="pesquisar">Pesquise por filmes e series:</label>
+                <label for="pesquisar">Pesquise por filmes e/ou séries:</label>
                 <input type="text" placeholder="Insira um título" id="pesquisar">
             </div>
 
             <div class="filtro">
-                <label for="Filtrar por gênero">Filtrar por Gênero</label>
-                <select name="gênero" id="">
-                    <option selected value="">Selecione um Gênero</option>
+                <label for="">Filtrar por gênero:</label>
+                <select name="genero" id="">
+                    <option selected value="">Selecione um gênero</option>
                     <option value="Drama">Drama</option>
                     <option value="Romance">Romance</option>
                     <option value="Terror">Terror</option>
-                    <option value="Ficção Cientifica">Ficção Cientifica</option>
+                    <option value="Ficção científica">Ficção científica</option>
                     <option value="Thriller">Thriller</option>
                     <option value="Ação">Ação</option>
                     <option value="Comédia">Comédia</option>
@@ -47,14 +45,14 @@
                     <option value="Crime">Crime</option>
                     <option value="Fantasia">Fantasia</option>
                     <option value="Mistério">Mistério</option>
-                    <option value="Sci-Fi & Fantasy">Sci-fi</option>
+                    <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
                 </select>
-                <button class="Limpar Filtros">Limpar Filtros</button>
+                <button class="limpar-filtros">Limpar filtros</button>
             </div>
         </div>
-        <section class="Filmes-series">
+        <section class="filmes-series">
             <h2 id="titulo-filmes">Filmes</h2>
-            <div class="card-conteiner">
+            <div class="card-container">
                 <a href="../detalhes-do-filme/" class="card"></a>
                 <a href="../detalhes-do-filme/" class="card"></a>
                 <a href="../detalhes-do-filme/" class="card"></a>
@@ -63,17 +61,16 @@
                 <a href="../detalhes-do-filme/" class="card"></a>
             </div>
         </section>
-
-        <section class="Filmes-series"></section>
-        <h2 id="titulo-series">Series</h2>
-        <div class="card-conteiner">
-            <a href="../detalhes-do-filme/" class="card"></a>
-            <a href="../detalhes-do-filme/" class="card"></a>
-            <a href="../detalhes-do-filme/" class="card"></a>
-            <a href="../detalhes-do-filme/" class="card"></a>
-            <a href="../detalhes-do-filme/" class="card"></a>
-            <a href="../detalhes-do-filme/" class="card"></a>
-        </div>
+        <section class="filmes-series">
+            <h2 id="titulo-series">Séries</h2>
+            <div class="card-container">
+                <a href="../detalhes-do-filme/" class="card"></a>
+                <a href="../detalhes-do-filme/" class="card"></a>
+                <a href="../detalhes-do-filme/" class="card"></a>
+                <a href="../detalhes-do-filme/" class="card"></a>
+                <a href="../detalhes-do-filme/" class="card"></a>
+                <a href="../detalhes-do-filme/" class="card"></a>
+            </div>
         </section>
     </main>
     <footer>
@@ -81,9 +78,8 @@
         <div class="imgs">
             <img src="../assets/imgs/mdi_twitter.svg" alt="Logo do Twitter">
             <img src="../assets/imgs/ri_instagram-fill.svg" alt="Logo do Instagram">
-            <img src="../assets/imgs/mdi_youtube.svg" alt="Logo Youtube">
+            <img src="../assets/imgs/mdi_youtube.svg" alt="Logo do Youtube">
         </div>
     </footer>
 </body>
-
 </html>
