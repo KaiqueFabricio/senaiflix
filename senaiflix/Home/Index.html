@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SENAIFLIX - Filmes e Séries</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="../assets/Styles/Global.css".css">
+    <link rel="stylesheet" href="../assets/Styles/Global.css">
+
 </head>
 <body>
     <header class="cabecalho">
         <a href="index.html">SENAIFLIX</a>
-        <img class="hamburger-menu" src="../assets/icons/material-symbols_menu.png" alt="">
+        <img id="menu-btn" class="hamburger-menu" src="../assets/icons/material-symbols_menu.png" alt="">
         <source>
         <nav>
             <a href="#">Início</a>
             <a href="#titulo-filmes">Filmes</a>
             <a href="#titulo-series">Séries</a>
         </nav>
+        <nav class="menu-mobile" id="menu-mobile">
+            <a href="#">Início</a>
+            <a href="#titulo-filmes">Filmes</a>
+            <a href="#titulo-series">Séries</a>
+          </nav>
     </header>
     <main>
         <section class="banner">
@@ -32,8 +38,8 @@
             </div>
 
             <div class="filtro">
-                <label for="">Filtrar por gênero:</label>
-                <select name="genero" id="">
+                <label for="genero">Filtrar por gênero:</label>
+                <select name="genero" id="genero">
                     <option selected value="">Selecione um gênero</option>
                     <option value="Drama">Drama</option>
                     <option value="Romance">Romance</option>
@@ -49,12 +55,12 @@
                     <option value="Mistério">Mistério</option>
                     <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
                 </select>
-                <button class="limpar-filtros">Limpar filtros</button>
+                <button id="limpar-filtro" class="limpar-filtros">Limpar filtros</button>
             </div>
         </div>
         <section class="filmes-series">
             <h2 id="titulo-filmes">Filmes</h2>
-            <div class="card-container">
+            <div id="filmes-container" class="card-container">
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
@@ -65,7 +71,7 @@
         </section>
         <section class="filmes-series">
             <h2 id="titulo-series">Séries</h2>
-            <div class="card-container">
+            <div id="series-container" class="card-container">
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
                 <a href="../detalhes-do-filme/Index.html" class="card"></a>
@@ -83,5 +89,6 @@
             <img src="../assets/imgs/mdi_youtube.svg" alt="Logo do Youtube">
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
